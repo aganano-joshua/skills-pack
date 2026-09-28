@@ -1,0 +1,212 @@
+{
+  "schemaVersion": 1,
+  "skills": [
+    {
+      "name": "architect",
+      "repository": "https://github.com/jsmastery-pro/skills",
+      "path": "skills/architect",
+      "revision": "43b69e44c9ca905fe3a3418ccdf4102255e20d40",
+      "contentHash": "2bc5c841fa5906178273cee84ea5394d5ac69c4022127855a1cbc909e0f3888e",
+      "license": { "spdx": "MIT", "evidence": ["LICENSE"], "notices": ["licenses/jsmastery-pro-skills/LICENSE"] },
+      "distribution": "snapshot"
+    },
+    {
+      "name": "arcjet",
+      "repository": "https://github.com/arcjet/skills",
+      "path": "arcjet",
+      "revision": "4ae5d847970cc3eb7adffb54290f371332421131",
+      "contentHash": "0e49fe1df2167db932e701939ba8345b05beab3e881fe68753603cb208ca96ee",
+      "license": { "spdx": "Apache-2.0", "evidence": ["LICENSE"], "notices": ["licenses/arcjet-skills/LICENSE"] },
+      "distribution": "snapshot"
+    },
+    {
+      "name": "audit",
+      "repository": "https://github.com/jsmastery-pro/skills",
+      "path": "skills/audit",
+      "revision": "43b69e44c9ca905fe3a3418ccdf4102255e20d40",
+      "contentHash": "0b0200a4811884312dc99cfbd4ab2bd9cb01a5ac3fddb86e2aaad77e3cfa60ce",
+      "license": { "spdx": "MIT", "evidence": ["LICENSE"], "notices": ["licenses/jsmastery-pro-skills/LICENSE"] },
+      "distribution": "snapshot"
+    },
+    {
+      "name": "check",
+      "repository": "https://github.com/jsmastery-pro/skills",
+      "path": "skills/check",
+      "revision": "43b69e44c9ca905fe3a3418ccdf4102255e20d40",
+      "contentHash": "59b5617b10ee95ec826355e30d9df6d2bc4fb3945a7828b85e8e8b984cee6f81",
+      "license": { "spdx": "MIT", "evidence": ["LICENSE"], "notices": ["licenses/jsmastery-pro-skills/LICENSE"] },
+      "distribution": "snapshot"
+    },
+    {
+      "name": "debug",
+      "repository": "https://github.com/jsmastery-pro/skills",
+      "path": "skills/debug",
+      "revision": "43b69e44c9ca905fe3a3418ccdf4102255e20d40",
+      "contentHash": "aca5fa18cb2ba2a97808a20bf3c88521d015dd556ab596aef0d175fa2f74c128",
+      "license": { "spdx": "MIT", "evidence": ["LICENSE"], "notices": ["licenses/jsmastery-pro-skills/LICENSE"] },
+      "distribution": "snapshot"
+    },
+    {
+      "name": "develop",
+      "repository": "https://github.com/jsmastery-pro/skills",
+      "path": "skills/develop",
+      "revision": "43b69e44c9ca905fe3a3418ccdf4102255e20d40",
+      "contentHash": "64ebb4ab2c9c2a6fd09d53cb3473303cfc3ff9c6c6eae3f14fec7f0bd0634fb0",
+      "license": { "spdx": "MIT", "evidence": ["LICENSE"], "notices": ["licenses/jsmastery-pro-skills/LICENSE"] },
+      "distribution": "snapshot"
+    },
+    {
+      "name": "document",
+      "repository": "https://github.com/jsmastery-pro/skills",
+      "path": "skills/document",
+      "revision": "43b69e44c9ca905fe3a3418ccdf4102255e20d40",
+      "contentHash": "c7f4866aded8664d0e5b54b6d8215ed1cfc3cc19c96ecf7e1ab23a93afd264df",
+      "license": { "spdx": "MIT", "evidence": ["LICENSE"], "notices": ["licenses/jsmastery-pro-skills/LICENSE"] },
+      "distribution": "snapshot"
+    },
+    {
+      "name": "nestjs-best-practices",
+      "repository": "https://github.com/kadajett/agent-nestjs-skills",
+      "path": "skills/nestjs-best-practices",
+      "revision": "3986e0cede33958e000f959031cbee0cd83c2941",
+      "contentHash": "e05e329af4c384f3c49307f4d47eabc1c0161e3d0ffdfab61d79e9df510669c5",
+      "license": { "spdx": "NONE-DETECTED", "evidence": ["No repository or skill license file detected at the pinned revision"], "notices": [] },
+      "distribution": "direct"
+    },
+    {
+      "name": "nestjs-testing-expert",
+      "repository": "https://github.com/shipshitdev/skills",
+      "path": "skills/nestjs-testing-expert",
+      "revision": "a0f9899c4254e9c000a390c00fbe5e11a52530bb",
+      "contentHash": "9303d931629221dfc587d685c77323a57c941b0a81e41ea8aacd5fedefe326d7",
+      "license": { "spdx": "NONE-DETECTED", "evidence": ["No repository or skill license file detected at the pinned revision"], "notices": [] },
+      "distribution": "direct"
+    },
+    {
+      "name": "postgresql-expert",
+      "repository": "https://github.com/personamanagmentlayer/pcl",
+      "path": "stdlib/data/postgresql-expert",
+      "revision": "79ccaa9820486121fa33aaa696ec16fa1607bf02",
+      "contentHash": "8d45c0ab71aa1f17f0139a99c72f34ffcaf116457f0cdf8a52cec6d6943543a8",
+      "license": { "spdx": "Apache-2.0", "evidence": ["stdlib/data/postgresql-expert/SKILL.md", "LICENSE", "LICENSE-DOCS", "NOTICE"], "notices": ["licenses/personamanagmentlayer-pcl/LICENSE", "licenses/personamanagmentlayer-pcl/LICENSE-DOCS", "licenses/personamanagmentlayer-pcl/NOTICE"] },
+      "distribution": "snapshot"
+    },
+    {
+      "name": "prisma-cli",
+      "repository": "https://github.com/prisma/skills",
+      "path": "prisma-cli",
+      "revision": "1123817e60d15ca0f3af91878923241dee7e3b09",
+      "contentHash": "f1777c388344bbecb805d4ad65344ffd8a59bd5a82966302ef31c1edd58698d7",
+      "license": { "spdx": "MIT", "evidence": ["LICENSE"], "notices": ["licenses/prisma-skills/LICENSE"] },
+      "distribution": "snapshot"
+    },
+    {
+      "name": "prisma-client-api",
+      "repository": "https://github.com/prisma/skills",
+      "path": "prisma-client-api",
+      "revision": "1123817e60d15ca0f3af91878923241dee7e3b09",
+      "contentHash": "827f2d782d78f17725f84376e84b549378754fac81d850b1f44f5877837c4ac8",
+      "license": { "spdx": "MIT", "evidence": ["LICENSE"], "notices": ["licenses/prisma-skills/LICENSE"] },
+      "distribution": "snapshot"
+    },
+    {
+      "name": "prisma-compute",
+      "repository": "https://github.com/prisma/skills",
+      "path": "prisma-compute",
+      "revision": "1123817e60d15ca0f3af91878923241dee7e3b09",
+      "contentHash": "9776313a6f1187783cba69448b8dd61fd0c89b5a04af4c23ef35aedcd7ce5b8a",
+      "license": { "spdx": "MIT", "evidence": ["LICENSE"], "notices": ["licenses/prisma-skills/LICENSE"] },
+      "distribution": "snapshot"
+    },
+    {
+      "name": "prisma-database-setup",
+      "repository": "https://github.com/prisma/skills",
+      "path": "prisma-database-setup",
+      "revision": "1123817e60d15ca0f3af91878923241dee7e3b09",
+      "contentHash": "cac997f0131a799dc88d3e557ed4e21784c5547f8b4afac6cd69ca8a4d3d5b28",
+      "license": { "spdx": "MIT", "evidence": ["LICENSE"], "notices": ["licenses/prisma-skills/LICENSE"] },
+      "distribution": "snapshot"
+    },
+    {
+      "name": "prisma-driver-adapter-implementation",
+      "repository": "https://github.com/prisma/skills",
+      "path": "prisma-driver-adapter-implementation",
+      "revision": "1123817e60d15ca0f3af91878923241dee7e3b09",
+      "contentHash": "3bc9ba92b7b0f801fd2d6d9db2e0dfe35de0314edd409c257856b47a852a2e41",
+      "license": { "spdx": "MIT", "evidence": ["LICENSE"], "notices": ["licenses/prisma-skills/LICENSE"] },
+      "distribution": "snapshot"
+    },
+    {
+      "name": "prisma-mongodb-upgrade",
+      "repository": "https://github.com/prisma/skills",
+      "path": "prisma-mongodb-upgrade",
+      "revision": "1123817e60d15ca0f3af91878923241dee7e3b09",
+      "contentHash": "e63eb457acee21c1a21ee42aad7e82363c7e8811790e700979df7d632b94edbf",
+      "license": { "spdx": "MIT", "evidence": ["LICENSE"], "notices": ["licenses/prisma-skills/LICENSE"] },
+      "distribution": "snapshot"
+    },
+    {
+      "name": "prisma-postgres",
+      "repository": "https://github.com/prisma/skills",
+      "path": "prisma-postgres",
+      "revision": "1123817e60d15ca0f3af91878923241dee7e3b09",
+      "contentHash": "17b31bdce3b700629d67d68e30ed4de257b1e73737c21e6d8bb01c503159d9eb",
+      "license": { "spdx": "MIT", "evidence": ["LICENSE"], "notices": ["licenses/prisma-skills/LICENSE"] },
+      "distribution": "snapshot"
+    },
+    {
+      "name": "prisma-postgres-setup",
+      "repository": "https://github.com/prisma/skills",
+      "path": "prisma-postgres-setup",
+      "revision": "1123817e60d15ca0f3af91878923241dee7e3b09",
+      "contentHash": "6ddfd5580ee2f786c524cd771b829a647542b1d3817999023e6ed56937fc1e74",
+      "license": { "spdx": "MIT", "evidence": ["LICENSE"], "notices": ["licenses/prisma-skills/LICENSE"] },
+      "distribution": "snapshot"
+    },
+    {
+      "name": "prisma-upgrade-v7",
+      "repository": "https://github.com/prisma/skills",
+      "path": "prisma-upgrade-v7",
+      "revision": "1123817e60d15ca0f3af91878923241dee7e3b09",
+      "contentHash": "7405e5938c70e8abe79d5796c20fbd7a937fab180efb4d5fb5fc1363284d1f5c",
+      "license": { "spdx": "MIT", "evidence": ["LICENSE"], "notices": ["licenses/prisma-skills/LICENSE"] },
+      "distribution": "snapshot"
+    },
+    {
+      "name": "scope",
+      "repository": "https://github.com/jsmastery-pro/skills",
+      "path": "skills/scope",
+      "revision": "43b69e44c9ca905fe3a3418ccdf4102255e20d40",
+      "contentHash": "04cc3d49ad25bb8de7a2a179c9332a6e5ad6068231208e1fefa3fdb57087b685",
+      "license": { "spdx": "MIT", "evidence": ["LICENSE"], "notices": ["licenses/jsmastery-pro-skills/LICENSE"] },
+      "distribution": "snapshot"
+    },
+    {
+      "name": "sync",
+      "repository": "https://github.com/jsmastery-pro/skills",
+      "path": "skills/sync",
+      "revision": "43b69e44c9ca905fe3a3418ccdf4102255e20d40",
+      "contentHash": "2ec4ef885428cecbf3bf6ede4261eb3f8c8f7be9e62769d74ab5f1c521c11027",
+      "license": { "spdx": "MIT", "evidence": ["LICENSE"], "notices": ["licenses/jsmastery-pro-skills/LICENSE"] },
+      "distribution": "snapshot"
+    },
+    {
+      "name": "test",
+      "repository": "https://github.com/jsmastery-pro/skills",
+      "path": "skills/test",
+      "revision": "43b69e44c9ca905fe3a3418ccdf4102255e20d40",
+      "contentHash": "5b5cd3905b205f2cf2d43c7e6720732f8e56f593a05e7c2390d032507858c388",
+      "license": { "spdx": "MIT", "evidence": ["LICENSE"], "notices": ["licenses/jsmastery-pro-skills/LICENSE"] },
+      "distribution": "snapshot"
+    },
+    {
+      "name": "typescript-expert",
+      "repository": "https://github.com/shipshitdev/skills",
+      "path": "skills/typescript-expert",
+      "revision": "a0f9899c4254e9c000a390c00fbe5e11a52530bb",
+      "contentHash": "9cebb9d2260cc8eba6479046d9ba0cf50bff41c17f7ed6c7c8790c880b6cd1df",
+      "license": { "spdx": "MIT", "evidence": ["skills/typescript-expert/licenses/LICENSE", "skills/typescript-expert/licenses/NOTICE.txt"], "notices": [] },
+      "distribution": "direct"
+    }
+  ]
+}

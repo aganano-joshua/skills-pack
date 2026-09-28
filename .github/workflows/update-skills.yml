@@ -1,0 +1,80 @@
+name: Review upstream skill updates
+
+on:
+  schedule:
+    - cron: "17 7 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+concurrency:
+  group: weekly-skills-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - id: update
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -o pipefail
+          npm run update-skills -- --report "$RUNNER_TEMP/update-report.md" 2>&1 | tee "$RUNNER_TEMP/update.log"
+      - name: Report update failure
+        if: steps.update.outcome == 'failure'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          title="Weekly skills update failed"
+          body_file="$RUNNER_TEMP/issue.md"
+          {
+            echo "The scheduled skills update failed. Review the workflow run before changing any pinned source."
+            echo
+            echo '```text'
+            tail -n 150 "$RUNNER_TEMP/update.log"
+            echo '```'
+          } > "$body_file"
+          number="$(gh issue list --state open --search 'Weekly skills update failed in:title' --json number --jq '.[0].number // empty')"
+          if [ -n "$number" ]; then
+            gh issue edit "$number" --body-file "$body_file"
+          else
+            gh issue create --title "$title" --body-file "$body_file"
+          fi
+          exit 1
+      - run: npm run validate
+      - run: npm test
+      - name: Create or update review pull request
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          if git diff --quiet; then
+            echo "No reviewed source changes found."
+            exit 0
+          fi
+          branch="automation/weekly-skills-update"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -B "$branch"
+          git add skills licenses sources.json
+          git commit -m "chore: review upstream skill updates"
+          git push --force origin "HEAD:$branch"
+          number="$(gh pr list --state open --head "$branch" --json number --jq '.[0].number // empty')"
+          if [ -n "$number" ]; then
+            gh pr edit "$number" --body-file "$RUNNER_TEMP/update-report.md"
+          else
+            gh pr create --base main --head "$branch" --title "chore: review upstream skill updates" --body-file "$RUNNER_TEMP/update-report.md"
+          fi
